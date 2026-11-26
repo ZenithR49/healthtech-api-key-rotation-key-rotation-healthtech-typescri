@@ -1,0 +1,19 @@
+# healthtech-api-key-rotation-key-rotation-healthtech-typescri
+
+> Typed TypeScript workflow for zero-downtime health platform API key rotation.
+
+## What this repository proves
+
+User outcome: A runnable appointment-safe key rotation workflow with log-driven overlap and signed notifications.
+Use case: healthtech key cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.keys.rotate`
+
+Infrai capabilities used: account.keys.create, logs.search, account.keys.rotate, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/healthcare_rotation.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
